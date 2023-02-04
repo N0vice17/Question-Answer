@@ -3,7 +3,8 @@
 int main(){
     int a,b,c;
     scanf("%d %d %d",&a,&b,&c);
-    int s=(a+b+c)/2;
-    printf("%f",sqrt(s*(s-a)*(s-b)*(s-c)));
+    printf("%d %d",(-1)*(a),(-1)*(b));
+    printf("\n");
+    printf("%f",sqrt((a*a)+(b*b)-c));
     return 0;
 }
