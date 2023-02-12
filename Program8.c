@@ -1,10 +1,9 @@
 #include<stdio.h>
-#include<math.h>
 int main(){
-    int a,b,c;
-    scanf("%d %d %d",&a,&b,&c);
-    printf("%d %d",(-1)*(a),(-1)*(b));
-    printf("\n");
-    printf("%f",sqrt((a*a)+(b*b)-c));
+    for(int i=1;i<=100;i++){
+        if(i%2==0&&(i%3!=0||i%5!=0)){
+            printf("%d\n",i);
+        }
+    }
     return 0;
 }

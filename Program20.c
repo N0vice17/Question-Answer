@@ -1,7 +1,8 @@
 #include<stdio.h>
 int main(){
-    for(int i=1;i<=100;i++){
-        if((i%3==0||i%5==0)&&i%15!=0){
+    for(int i=10;i<=99;i++){
+        int num=((i%10)*10)+(i/10);
+        if(num%7==0){
             printf("%d\n",i);
         }
     }

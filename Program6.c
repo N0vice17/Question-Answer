@@ -1,8 +1,9 @@
 #include<stdio.h>
-#include<math.h>
 int main(){
-    int a,b,c;
-    scanf("%d %d %d",&a,&b,&c);
-    printf("%f",(-1)*((float)a/(float)b));
+    for(int i=1;i<=100;i++){
+        if(i%3==0||i%7==0){
+            printf("%d\n",i);
+        }
+    }
     return 0;
 }

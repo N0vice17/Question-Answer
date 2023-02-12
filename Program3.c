@@ -1,9 +1,12 @@
 #include<stdio.h>
-#include<math.h>
 int main(){
-    int a,b,c;
-    scanf("%d %d %d",&a,&b,&c);
-    int s=(a+b+c)/2;
-    printf("%f",sqrt(s*(s-a)*(s-b)*(s-c)));
+    for(int i=21;i<39;i++){
+        printf("%d\n",i);
+    }
+    for(int i=51;i<80;i++){
+        if(i%2==0){
+            printf("%d\n",i);
+        }
+    }
     return 0;
 }
