@@ -1,14 +1,19 @@
 #include<stdio.h>
 int main(){
-    int num,temp;
-    scanf("%d",&num);
-    temp=num;
-    int count=1;
-    while(num>0){
-        num=num/10;
-       count=count*10;
+    int num1,num2,hcf;
+    scanf("%d %d",&num1,&num2);
+    int length=0;
+    if(num1>=num2){
+        length=num2;
     }
-    count=count/100;
-    printf("%d",(temp/count)%10);
+    else{
+        length=num1;
+    }
+    for(int i=1;i<=length;i++){
+        if(num1%i==0&&num2%i==0){
+            hcf=i;
+        }
+    }
+    printf("%d",(num1*num2)/hcf);
     return 0;
 }

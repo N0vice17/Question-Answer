@@ -1,14 +1,28 @@
 #include<stdio.h>
 int main(){
-    int num,temp;
-    scanf("%d",&num);
-    temp=num;
-    int count=1;
-    while(num>0){
-        num=num/10;
-       count=count*10;
+    int a=0,b=1,sum=a+b;
+    int length;
+    scanf("%d",&length);
+    for(int i=0;i<length;i++){
+        if(sum>1){
+            int a=0;
+            for(int j=2;j*j<=sum;j++){
+                if(sum%j==0){
+                    a=1;
+                    break;
+                }
+                else{
+                    a=0;
+                }
+            }
+            if(a==0){
+                printf("%d",sum);
+                printf(" ");
+            }
+        }
+        a=b;
+        b=sum;
+        sum=a+b;
     }
-    count=count/10;
-    printf("%d",(temp/count)%10);
     return 0;
 }

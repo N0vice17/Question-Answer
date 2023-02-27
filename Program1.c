@@ -1,10 +1,13 @@
 #include<stdio.h>
 int main(){
-    int k,num;
-    scanf("%d %d",&num,&k);
-    while(k--){
-        num=num/10;
+    int length;
+    scanf("%d",&length);
+    for(int i=1;i<=length;i++){
+        for(int j=1;j<=i;j++){
+            printf("%d",j);
+            printf(" ");
+        }
+        printf("\n");
     }
-    printf("%d",num);
     return 0;
 }
