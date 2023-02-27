@@ -1,5 +1,5 @@
 1. Describe the differnce between the literal values of 7,"7",'7':
-Ans:   7 is numberic. while "5" is a string with 0x35 being the first byte and 0x00 being the second ASCII encoding. '5' a character with
+Ans:   7 is number literal. "7" is a string literal that ends with null. '7' is a character literal having ASCII value 55.
         ASCII code 0x35.
 
 2. what is the difference between while and do while loop?
@@ -12,6 +12,7 @@ Ans:
         2. Condition is checked first then statement is executed
         3. It can happen that statement is executed zero times.
         4. If there is a single state then bracket is not required.
+        5. An example of entry-controlled loop.
 
 
                 DO-WHILE LOOP
@@ -22,3 +23,4 @@ Ans:
         2. Condition is checked at the last after the execution of statement.
         3. At least once the statement is executed.
         4. Brackets are always required.
+        5. An example of exit-controlled loop.
